@@ -3,15 +3,16 @@ package initlization_block;
 import java.lang.reflect.Constructor;
 
 class Test{
-    int a;
+    static int a;
     // initlization block
+    static
     {
         a = 5;
-        System.out.print("Initlization Block");
+        System.out.println("Initlization Block");
     }
 
     Test(){
-        System.out.print("Constructor");
+        System.out.println("Constructor");
     }
 }
 
